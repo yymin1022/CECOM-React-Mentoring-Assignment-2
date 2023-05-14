@@ -25,8 +25,8 @@ const App = () => {
 }
 
 const ParentComponent = styled.div`
-    height: 100vw;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     
     display: flex;
     flex-direction: row;
@@ -49,7 +49,7 @@ const RightComponent = styled.div`
 `;
 
 const LeftTitleContainer = styled.div`
-    height: 450px;
+    height: 200px;
     width: 100%;
   
     padding: 30px;
@@ -68,6 +68,8 @@ const LeftTitleItem = styled.p`
 
 const RightPostContainer = styled.div`
     width: 100%;
+  
+    padding: 100px;
   
     display: flex;
     flex-direction: row;

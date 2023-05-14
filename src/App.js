@@ -72,7 +72,7 @@ const RightPostConteiner = styled.div`
   
     display: flex;
     flex-direction: row;
-    fle
+    flex-wrap: wrap;
     justify-content: space-evenly;
 `;
 

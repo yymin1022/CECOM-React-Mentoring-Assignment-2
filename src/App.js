@@ -22,6 +22,8 @@ const ParentComponent = styled.div`
 const LeftComponent = styled.div`
     height: 100%;
     width: 400px;
+  
+    background-color: rgb(22, 78, 171);
 `;
 
 const RightComponent = styled.div`

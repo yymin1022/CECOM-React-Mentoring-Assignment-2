@@ -4,7 +4,10 @@ const PostItem = () => {
     return (
         <>
             <PostItemContainer>
-                PostItem
+                <PostImageContainer>
+                    Post Image!!
+                </PostImageContainer>
+                <PostDataContainer></PostDataContainer>
             </PostItemContainer>
         </>
     )
@@ -16,7 +19,19 @@ const PostItemContainer = styled.div`
   
     margin: 20px;
   
-    background-color: blue;
+    flex-direction: row;
+`;
+
+const PostImageContainer = styled.div`
+    height: 150px;
+    width: 150px;
+    
+    background-color: lightblue;
+`;
+
+const PostDataContainer = styled.div`
+    height: 150px;
+    width: 300px;
 `;
 
 export default PostItem;

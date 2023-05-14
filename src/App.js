@@ -41,8 +41,10 @@ const RightComponent = styled.div`
 `;
 
 const LeftTitleContainer = styled.div`
-    height: 400px;
+    height: 450px;
     width: 100%;
+  
+    padding: 30px;
   
     display: flex;
     flex-direction: column;
@@ -50,7 +52,7 @@ const LeftTitleContainer = styled.div`
 
 const LeftTitleItem = styled.p`
     color: white;
-    font-size: 40px;
+    font-size: 60px;
   
     margin: 0;
     padding: 0;

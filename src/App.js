@@ -12,12 +12,12 @@ const App = () => {
                     </LeftTitleContainer>
                 </LeftComponent>
                 <RightComponent>
-                    <RightPostConteiner>
+                    <RightPostContainer>
                         <PostItem/>
                         <PostItem/>
                         <PostItem/>
                         <PostItem/>
-                    </RightPostConteiner>
+                    </RightPostContainer>
                 </RightComponent>
             </ParentComponent>
         </>
@@ -66,13 +66,13 @@ const LeftTitleItem = styled.p`
     padding: 0;
 `;
 
-const RightPostConteiner = styled.div`
-    height: 100%;
+const RightPostContainer = styled.div`
     width: 100%;
   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-evenly;
 `;
 

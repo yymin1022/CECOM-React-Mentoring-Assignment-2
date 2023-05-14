@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PostItem from "./PostItem";
 
 const App = () => {
     return (
@@ -10,7 +11,14 @@ const App = () => {
                         <LeftTitleItem>제목</LeftTitleItem>
                     </LeftTitleContainer>
                 </LeftComponent>
-                <RightComponent></RightComponent>
+                <RightComponent>
+                    <RightPostConteiner>
+                        <PostItem/>
+                        <PostItem/>
+                        <PostItem/>
+                        <PostItem/>
+                    </RightPostConteiner>
+                </RightComponent>
             </ParentComponent>
         </>
     );
@@ -56,6 +64,16 @@ const LeftTitleItem = styled.p`
   
     margin: 0;
     padding: 0;
+`;
+
+const RightPostConteiner = styled.div`
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    fle
+    justify-content: space-evenly;
 `;
 
 export default App;

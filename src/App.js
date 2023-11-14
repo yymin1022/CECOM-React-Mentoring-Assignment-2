@@ -1,5 +1,6 @@
-import styled from "styled-components";
 import {BrowserRouter, Routes, Route, Outlet} from "react-router-dom";
+import styled from "styled-components";
+
 import PostList from "./PostList";
 
 const App = () => {

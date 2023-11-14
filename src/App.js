@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route, Outlet} from "react-router-dom";
 import styled from "styled-components";
 
 import PostList from "./PostList";
+import PostView from "./PostView";
 
 const App = () => {
     return (
@@ -10,6 +11,7 @@ const App = () => {
                 <Routes>
                     <Route element={<Parent/>}>
                         <Route path="/" element={<PostList />} />
+                        <Route path="/postview/:id" element={<PostView />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

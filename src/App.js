@@ -1,22 +1,36 @@
 import styled from "styled-components";
+import {BrowserRouter, Routes, Route, Outlet} from "react-router-dom";
 import PostList from "./PostList";
 
 const App = () => {
     return (
         <>
-            <ParentComponent>
-                <LeftComponent>
-                    <LeftTitleContainer>
-                        <LeftTitleItem>블로그</LeftTitleItem>
-                        <LeftTitleItem>제목</LeftTitleItem>
-                    </LeftTitleContainer>
-                </LeftComponent>
-                <RightComponent>
-                    <PostList />
-                </RightComponent>
-            </ParentComponent>
+            <BrowserRouter>
+                <Routes>
+                    <Route element={<Parent/>}>
+                        <Route path="/" element={<PostList />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+
         </>
     );
+}
+
+const Parent = () => {
+    return (
+        <ParentComponent>
+            <LeftComponent>
+                <LeftTitleContainer>
+                    <LeftTitleItem>블로그</LeftTitleItem>
+                    <LeftTitleItem>제목</LeftTitleItem>
+                </LeftTitleContainer>
+            </LeftComponent>
+            <RightComponent>
+                <Outlet/>
+            </RightComponent>
+        </ParentComponent>
+    )
 }
 
 const ParentComponent = styled.div`
